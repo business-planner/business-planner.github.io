@@ -423,10 +423,11 @@ function buildHeader() {
         <a href="/#market">Market Analysis</a>
         <a href="/#roadmap">Roadmap</a>
         <a href="/#faq">FAQ</a>
-      </nav>
-      <div class="header-cta">
-        <a href="#app" class="btn btn-primary" style="padding:10px 20px;">Start Planning</a>        
+        <div class="header-cta">
+        <a href="/#app" class="btn btn-primary" style="padding:10px 20px;">Start Planning</a>        
       </div>
+      </nav>
+      
       <div class="hamburger" id="hamburgerBtn">
         <span></span><span></span><span></span>
       </div>
