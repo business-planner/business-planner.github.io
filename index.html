@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJWZ8XF9MW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RJWZ8XF9MW');
+</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Planner – Web Application | Plan, Launch & Grow</title>
+  <meta name="description" content="Business Planner is the ultimate business planner web application. Create business plans, financial projections, SWOT analysis, goal tracking, and strategic roadmaps — all in one place." />
+  <meta name="keywords" content="business planner, business plan software, business planning tool, financial projections, SWOT analysis, business roadmap, startup planner, goal tracker, business strategy" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Business Planner" />
+  <link rel="canonical" href="https://business-planner.github.io/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Business Planner – Business Planner Web Application" />
+  <meta property="og:description" content="Plan, launch, and grow your business with Business Planner. Advanced business planning tools, financial forecasts, and strategic analysis." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://business-planner.github.io/" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Business Planner",
+    "url": "https://business-planner.github.io/",
+    "description": "Business Planner is an advanced business planner web application for entrepreneurs and businesses to create plans, financial projections, SWOT analysis, and strategic roadmaps.",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "featureList": [
+      "Business Plan Builder",
+      "Financial Projections",
+      "SWOT Analysis",
+      "Goal Tracker",
+      "Strategic Roadmap",
+      "Market Analysis",
+      "Cash Flow Planner"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Business Planner",
+    "url": "https://business-planner.github.io/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://business-planner.github.io/?search={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,800;1,9..144,300&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===== CSS VARIABLES ===== */
+    :root {
+      --cream: #FDF8F0;
+      --warm-white: #FFFDF9;
+      --gold: #C9952A;
+      --gold-light: #E8B84B;
+      --gold-pale: #F5E6C4;
+      --forest: #1A3A2A;
+      --forest-mid: #2D5A3D;
+      --forest-light: #4A7C59;
+      --sage: #8FAF8F;
+      --text-dark: #1C1C1C;
+      --text-mid: #4A4A4A;
+      --text-light: #7A7A7A;
+      --border: #E8E0D0;
+      --shadow: 0 4px 24px rgba(26,58,42,0.10);
+      --shadow-lg: 0 12px 48px rgba(26,58,42,0.15);
+      --radius: 12px;
+      --radius-lg: 20px;
+      --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text-dark);
+      overflow-x: hidden;
+      line-height: 1.65;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; font-family: inherit; border: none; background: none; }
+    ul { list-style: none; }
+
+    /* ===== SCROLLBAR ===== */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--cream); }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1, h2, h3, h4 { font-family: 'Fraunces', serif; line-height: 1.15; }
+    h1 { font-size: clamp(2.6rem, 6vw, 5rem); font-weight: 800; }
+    h2 { font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 600; }
+    h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); font-weight: 600; }
+    p { font-size: 1.05rem; color: var(--text-mid); }
+
+    /* ===== UTILITY ===== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 100px 0; }
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .section-title { margin-bottom: 20px; color: var(--forest); }
+    .section-subtitle { font-size: 1.1rem; max-width: 620px; color: var(--text-mid); margin-bottom: 56px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 30px; border-radius: 50px; font-size: 0.95rem; font-weight: 500;
+      transition: var(--transition); position: relative; overflow: hidden;
+    }
+    .btn-primary {
+      background: var(--forest); color: #fff;
+      box-shadow: 0 4px 20px rgba(26,58,42,0.25);
+    }
+    .btn-primary:hover { background: var(--forest-mid); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(26,58,42,0.3); }
+    .btn-gold {
+      background: var(--gold); color: #fff;
+      box-shadow: 0 4px 20px rgba(201,149,42,0.35);
+    }
+    .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .btn-outline {
+      background: transparent; color: var(--forest);
+      border: 2px solid var(--forest);
+    }
+    .btn-outline:hover { background: var(--forest); color: #fff; transform: translateY(-2px); }
+
+    /* ===== HEADER (injected by JS) ===== */
+    #site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(253,248,240,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: var(--transition);
+    }
+    #site-header.scrolled { box-shadow: var(--shadow); }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 24px; max-width: 1200px; margin: 0 auto;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 800; color: var(--forest);
+    }
+    .logo-icon {
+      width: 36px; height: 36px; background: var(--forest); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-icon svg { width: 20px; height: 20px; }
+    .nav { display: flex; align-items: center; gap: 36px; }
+    .nav a { font-size: 0.9rem; font-weight: 500; color: var(--text-mid); transition: color 0.2s; }
+    .nav a:hover { color: var(--forest); }
+    .header-cta { display: flex; align-items: center; gap: 12px; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { width: 24px; height: 2px; background: var(--forest); transition: var(--transition); border-radius: 2px; }
+
+    /* ===== MOBILE NAV ===== */
+    .mobile-nav {
+      display: none; position: fixed; top: 73px; left: 0; right: 0; bottom: 0;
+      background: var(--warm-white); z-index: 999; padding: 40px 24px;
+      flex-direction: column; gap: 28px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a { font-size: 1.2rem; font-weight: 600; color: var(--forest); font-family: 'Fraunces', serif; }
+
+    /* ===== HERO ===== */
+    #hero {
+      min-height: 100vh; display: flex; align-items: center;
+      background: var(--warm-white); padding-top: 80px;
+      position: relative; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; pointer-events: none; z-index: 0;
+    }
+    .hero-orb {
+      position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.35;
+      animation: orbFloat 8s ease-in-out infinite;
+    }
+    .hero-orb-1 { width: 500px; height: 500px; background: var(--gold-pale); top: -100px; right: -100px; }
+    .hero-orb-2 { width: 350px; height: 350px; background: #d4e8d4; bottom: -80px; left: -80px; animation-delay: -4s; }
+    @keyframes orbFloat {
+      0%, 100% { transform: translate(0,0) scale(1); }
+      50% { transform: translate(20px, -20px) scale(1.05); }
+    }
+    .hero-inner {
+      position: relative; z-index: 1;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+      max-width: 1200px; margin: 0 auto; padding: 0 24px; width: 100%;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold-pale); border: 1px solid var(--gold);
+      padding: 6px 16px; border-radius: 50px; font-size: 0.78rem; font-weight: 600;
+      color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 24px;
+    }
+    .hero-badge span { width: 6px; height: 6px; background: var(--gold); border-radius: 50%; animation: blink 1.5s infinite; }
+    @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0;} }
+    .hero-title { margin-bottom: 24px; }
+    .hero-title em { font-style: italic; color: var(--gold); }
+    .hero-desc { font-size: 1.15rem; margin-bottom: 40px; max-width: 480px; }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-stats { display: flex; gap: 40px; margin-top: 56px; }
+    .hero-stat-num { font-family: 'Fraunces', serif; font-size: 2rem; font-weight: 800; color: var(--forest); }
+    .hero-stat-label { font-size: 0.8rem; color: var(--text-light); margin-top: 2px; }
+
+    /* Hero Visual */
+    .hero-visual { position: relative; }
+    .hero-card {
+      background: #fff; border-radius: var(--radius-lg); padding: 28px;
+      box-shadow: var(--shadow-lg); border: 1px solid var(--border);
+      animation: cardEntry 1s ease forwards; opacity: 0;
+    }
+    @keyframes cardEntry { to { opacity: 1; transform: none; } from { opacity: 0; transform: translateY(30px); } }
+    .hero-card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+    .hero-card-title { font-size: 0.85rem; font-weight: 600; color: var(--text-mid); }
+    .hero-card-badge { background: #e8f5ee; color: #2d7a4f; font-size: 0.72rem; font-weight: 600; padding: 3px 10px; border-radius: 50px; }
+    .progress-list { display: flex; flex-direction: column; gap: 14px; }
+    .progress-item { }
+    .progress-label { display: flex; justify-content: space-between; font-size: 0.8rem; margin-bottom: 6px; color: var(--text-mid); }
+    .progress-bar { height: 7px; background: var(--border); border-radius: 50px; overflow: hidden; }
+    .progress-fill { height: 100%; border-radius: 50px; background: linear-gradient(90deg, var(--forest), var(--forest-light)); transition: width 1.5s cubic-bezier(0.4,0,0.2,1); }
+    .mini-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+    .mini-card { background: var(--cream); border-radius: var(--radius); padding: 14px; border: 1px solid var(--border); }
+    .mini-card-val { font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 700; color: var(--forest); }
+    .mini-card-lbl { font-size: 0.72rem; color: var(--text-light); margin-top: 2px; }
+    .floating-tag {
+      position: absolute; background: #fff; border-radius: 50px; padding: 8px 16px;
+      box-shadow: var(--shadow); border: 1px solid var(--border); display: flex; align-items: center; gap: 8px;
+      font-size: 0.78rem; font-weight: 600; color: var(--forest);
+      animation: floatTag 4s ease-in-out infinite;
+    }
+    .floating-tag:nth-child(2) { top: -20px; right: -20px; animation-delay: -2s; }
+    .floating-tag:nth-child(3) { bottom: 40px; left: -30px; animation-delay: -1s; }
+    @keyframes floatTag { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-8px);} }
+    .tag-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+    /* ===== FEATURES ===== */
+    #features { background: var(--cream); }
+    .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .feature-card {
+      background: #fff; border-radius: var(--radius-lg); padding: 36px 28px;
+      border: 1px solid var(--border); transition: var(--transition);
+      position: relative; overflow: hidden;
+    }
+    .feature-card::before {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--forest));
+      transform: scaleX(0); transform-origin: left; transition: transform 0.4s ease;
+    }
+    .feature-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+    .feature-card:hover::before { transform: scaleX(1); }
+    .feature-icon {
+      width: 52px; height: 52px; border-radius: 14px; display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px; font-size: 1.5rem;
+    }
+    .feature-icon.green { background: #e8f5ee; }
+    .feature-icon.gold { background: var(--gold-pale); }
+    .feature-icon.blue { background: #e8f0f8; }
+    .feature-card h3 { font-size: 1.15rem; margin-bottom: 10px; color: var(--forest); }
+    .feature-card p { font-size: 0.92rem; line-height: 1.7; }
+
+    /* ===== APP / PLANNER TOOL ===== */
+    #app { background: var(--forest); color: #fff; }
+    #app .section-label { color: var(--gold-light); }
+    #app .section-title { color: #fff; }
+    #app .section-subtitle { color: rgba(255,255,255,0.7); }
+    .app-wrapper {
+      background: rgba(255,255,255,0.06); border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,0.12); overflow: hidden;
+    }
+    .app-tabs { display: flex; border-bottom: 1px solid rgba(255,255,255,0.1); overflow-x: auto; }
+    .app-tab {
+      padding: 16px 28px; font-size: 0.88rem; font-weight: 500; color: rgba(255,255,255,0.6);
+      cursor: pointer; white-space: nowrap; transition: var(--transition); border-bottom: 3px solid transparent;
+    }
+    .app-tab.active { color: var(--gold-light); border-bottom-color: var(--gold-light); background: rgba(255,255,255,0.04); }
+    .app-tab:hover { color: #fff; }
+    .app-panel { display: none; padding: 40px; }
+    .app-panel.active { display: block; }
+
+    /* Business Plan Tab */
+    .plan-sections { display: flex; flex-direction: column; gap: 16px; }
+    .plan-section {
+      background: rgba(255,255,255,0.07); border-radius: var(--radius); border: 1px solid rgba(255,255,255,0.1);
+      overflow: hidden; transition: var(--transition);
+    }
+    .plan-section-header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 22px; cursor: pointer;
+    }
+    .plan-section-header h4 { font-size: 0.95rem; font-weight: 500; color: #fff; }
+    .plan-section-toggle { color: var(--gold-light); font-size: 1.2rem; transition: transform 0.3s; }
+    .plan-section.expanded .plan-section-toggle { transform: rotate(45deg); }
+    .plan-section-body { display: none; padding: 0 22px 22px; }
+    .plan-section.expanded .plan-section-body { display: block; }
+    .plan-section-body textarea, .plan-section-body input {
+      width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px; padding: 12px 16px; color: #fff; font-family: 'DM Sans', sans-serif; font-size: 0.9rem;
+      resize: vertical; outline: none; transition: border-color 0.2s;
+    }
+    .plan-section-body textarea { min-height: 80px; }
+    .plan-section-body textarea:focus, .plan-section-body input:focus { border-color: var(--gold-light); }
+    .plan-section-body label { font-size: 0.8rem; color: rgba(255,255,255,0.5); margin-bottom: 8px; display: block; }
+
+    /* SWOT Tab */
+    .swot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .swot-box { border-radius: var(--radius); padding: 20px; border: 1px solid rgba(255,255,255,0.1); }
+    .swot-box.s { background: rgba(45,90,61,0.5); }
+    .swot-box.w { background: rgba(180,80,60,0.3); }
+    .swot-box.o { background: rgba(60,110,180,0.3); }
+    .swot-box.t { background: rgba(180,140,40,0.3); }
+    .swot-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 12px; }
+    .swot-box.s .swot-label { color: #7ddfaa; }
+    .swot-box.w .swot-label { color: #f4907a; }
+    .swot-box.o .swot-label { color: #88b4f4; }
+    .swot-box.t .swot-label { color: #f4d080; }
+    .swot-items { display: flex; flex-direction: column; gap: 8px; }
+    .swot-item {
+      display: flex; align-items: center; gap: 10px;
+      background: rgba(255,255,255,0.07); border-radius: 8px; padding: 9px 12px;
+    }
+    .swot-item span { font-size: 0.85rem; color: rgba(255,255,255,0.85); flex: 1; }
+    .swot-item input {
+      flex: 1; background: none; border: none; color: rgba(255,255,255,0.85); font-size: 0.85rem;
+      font-family: 'DM Sans', sans-serif; outline: none;
+    }
+    .swot-item input::placeholder { color: rgba(255,255,255,0.35); }
+    .swot-add {
+      margin-top: 10px; font-size: 0.8rem; color: rgba(255,255,255,0.5);
+      display: flex; align-items: center; gap: 6px; cursor: pointer; transition: color 0.2s;
+    }
+    .swot-add:hover { color: var(--gold-light); }
+
+    /* Goals Tab */
+    .goals-wrapper { display: flex; flex-direction: column; gap: 16px; }
+    .goal-item {
+      background: rgba(255,255,255,0.07); border-radius: var(--radius); padding: 20px;
+      border: 1px solid rgba(255,255,255,0.1); display: flex; gap: 16px; align-items: flex-start;
+    }
+    .goal-priority {
+      width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center;
+      font-size: 0.7rem; font-weight: 700; flex-shrink: 0;
+    }
+    .goal-priority.high { background: rgba(220,80,60,0.3); color: #f4907a; }
+    .goal-priority.med { background: rgba(180,140,40,0.3); color: #f4d080; }
+    .goal-priority.low { background: rgba(60,140,100,0.3); color: #7ddfaa; }
+    .goal-content { flex: 1; }
+    .goal-title { font-size: 0.95rem; font-weight: 500; color: #fff; margin-bottom: 8px; }
+    .goal-progress-bar { height: 6px; background: rgba(255,255,255,0.1); border-radius: 50px; overflow: hidden; }
+    .goal-progress-fill { height: 100%; border-radius: 50px; transition: width 1.5s ease; }
+    .goal-meta { display: flex; gap: 16px; margin-top: 8px; font-size: 0.75rem; color: rgba(255,255,255,0.45); }
+    .add-goal-row { display: flex; gap: 12px; margin-top: 8px; }
+    .add-goal-row input {
+      flex: 1; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 8px; padding: 11px 14px; color: #fff; font-family: 'DM Sans', sans-serif;
+      font-size: 0.88rem; outline: none;
+    }
+    .add-goal-row input:focus { border-color: var(--gold-light); }
+
+    /* Financials Tab */
+    .fin-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 28px; }
+    .fin-card { background: rgba(255,255,255,0.07); border-radius: var(--radius); padding: 20px; border: 1px solid rgba(255,255,255,0.1); }
+    .fin-card label { font-size: 0.72rem; color: rgba(255,255,255,0.45); letter-spacing: 0.05em; margin-bottom: 10px; display: block; text-transform: uppercase; }
+    .fin-card .fin-val { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 700; color: #fff; }
+    .fin-card input {
+      background: none; border: none; border-bottom: 1px solid rgba(255,255,255,0.2);
+      color: #fff; font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 700;
+      width: 100%; outline: none; padding-bottom: 4px;
+    }
+    .fin-card input::placeholder { color: rgba(255,255,255,0.3); }
+    .fin-chart { background: rgba(255,255,255,0.04); border-radius: var(--radius); padding: 20px; }
+    .fin-chart-title { font-size: 0.82rem; color: rgba(255,255,255,0.5); margin-bottom: 16px; }
+    .chart-bars { display: flex; align-items: flex-end; gap: 8px; height: 120px; }
+    .chart-bar-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 6px; height: 100%; justify-content: flex-end; }
+    .chart-bar { width: 100%; border-radius: 4px 4px 0 0; transition: height 1s ease; min-height: 4px; }
+    .chart-bar.revenue { background: linear-gradient(180deg, var(--gold-light), var(--gold)); }
+    .chart-bar.expense { background: rgba(255,255,255,0.2); }
+    .chart-month { font-size: 0.65rem; color: rgba(255,255,255,0.35); }
+
+    /* ===== HOW IT WORKS ===== */
+    #how-it-works { background: var(--warm-white); }
+    .steps { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; position: relative; }
+    .steps::before {
+      content: ''; position: absolute; top: 36px; left: calc(12.5% + 18px); right: calc(12.5% + 18px);
+      height: 2px; background: linear-gradient(90deg, var(--gold), var(--forest-light));
+      z-index: 0;
+    }
+    .step { text-align: center; padding: 0 20px; position: relative; z-index: 1; }
+    .step-num {
+      width: 72px; height: 72px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 800;
+      margin: 0 auto 20px; border: 3px solid transparent; transition: var(--transition);
+    }
+    .step:nth-child(1) .step-num { background: var(--gold-pale); color: var(--gold); border-color: var(--gold); }
+    .step:nth-child(2) .step-num { background: #e8f5ee; color: var(--forest-mid); border-color: var(--forest-mid); }
+    .step:nth-child(3) .step-num { background: var(--gold-pale); color: var(--gold); border-color: var(--gold); }
+    .step:nth-child(4) .step-num { background: #e8f5ee; color: var(--forest-mid); border-color: var(--forest-mid); }
+    .step:hover .step-num { transform: scale(1.12) rotate(-5deg); }
+    .step h3 { font-size: 1.05rem; margin-bottom: 10px; color: var(--forest); }
+    .step p { font-size: 0.88rem; }
+
+    /* ===== FINANCIAL CALCULATOR ===== */
+    #calculator { background: var(--cream); }
+    .calc-wrapper {
+      background: #fff; border-radius: var(--radius-lg); padding: 48px;
+      border: 1px solid var(--border); box-shadow: var(--shadow);
+    }
+    .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    .calc-form { display: flex; flex-direction: column; gap: 20px; }
+    .form-group { display: flex; flex-direction: column; gap: 8px; }
+    .form-group label { font-size: 0.82rem; font-weight: 600; color: var(--forest); letter-spacing: 0.04em; }
+    .form-group input, .form-group select {
+      padding: 13px 16px; border: 1.5px solid var(--border); border-radius: 10px;
+      font-size: 0.95rem; font-family: 'DM Sans', sans-serif; color: var(--text-dark);
+      outline: none; transition: border-color 0.2s; background: var(--cream);
+    }
+    .form-group input:focus, .form-group select:focus { border-color: var(--forest); }
+    .calc-results { display: flex; flex-direction: column; gap: 16px; }
+    .result-card {
+      border-radius: var(--radius); padding: 20px 24px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .result-card.primary { background: var(--forest); color: #fff; }
+    .result-card.secondary { background: var(--gold-pale); border: 1px solid var(--gold); }
+    .result-label { font-size: 0.82rem; opacity: 0.75; margin-bottom: 4px; }
+    .result-value { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 700; }
+    .result-card.secondary .result-value { color: var(--gold); }
+    .result-icon { font-size: 2rem; opacity: 0.3; }
+    .calc-note { font-size: 0.78rem; color: var(--text-light); text-align: center; margin-top: 12px; }
+
+    /* ===== MARKET ANALYSIS ===== */
+    #market { background: var(--warm-white); }
+    .market-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 64px; align-items: center; }
+    .market-visual { position: relative; }
+    .market-chart {
+      background: #fff; border-radius: var(--radius-lg); padding: 36px;
+      box-shadow: var(--shadow); border: 1px solid var(--border);
+    }
+    .donut-wrap { position: relative; width: 180px; height: 180px; margin: 0 auto 24px; }
+    .donut-svg { transform: rotate(-90deg); }
+    .donut-center {
+      position: absolute; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+    }
+    .donut-center-val { font-family: 'Fraunces', serif; font-size: 1.8rem; font-weight: 800; color: var(--forest); }
+    .donut-center-lbl { font-size: 0.7rem; color: var(--text-light); }
+    .legend { display: flex; flex-direction: column; gap: 12px; }
+    .legend-item { display: flex; align-items: center; gap: 12px; }
+    .legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+    .legend-name { font-size: 0.85rem; color: var(--text-mid); flex: 1; }
+    .legend-pct { font-size: 0.85rem; font-weight: 600; color: var(--forest); }
+    .market-content { }
+    .market-points { display: flex; flex-direction: column; gap: 24px; margin-top: 32px; }
+    .market-point { display: flex; gap: 20px; align-items: flex-start; }
+    .market-point-icon {
+      width: 44px; height: 44px; border-radius: 12px; background: var(--gold-pale);
+      display: flex; align-items: center; justify-content: center; font-size: 1.2rem; flex-shrink: 0;
+    }
+    .market-point h4 { font-size: 1rem; color: var(--forest); margin-bottom: 4px; }
+    .market-point p { font-size: 0.88rem; }
+
+    /* ===== ROADMAP ===== */
+    #roadmap { background: var(--cream); }
+    .roadmap-timeline { position: relative; padding-left: 48px; }
+    .roadmap-timeline::before {
+      content: ''; position: absolute; left: 18px; top: 0; bottom: 0;
+      width: 3px; background: linear-gradient(180deg, var(--gold), var(--forest));
+      border-radius: 2px;
+    }
+    .timeline-item { position: relative; margin-bottom: 48px; }
+    .timeline-item:last-child { margin-bottom: 0; }
+    .timeline-dot {
+      position: absolute; left: -40px; top: 8px;
+      width: 20px; height: 20px; border-radius: 50%;
+      border: 3px solid var(--gold); background: var(--cream);
+      transition: var(--transition);
+    }
+    .timeline-item:hover .timeline-dot { background: var(--gold); transform: scale(1.3); }
+    .timeline-phase {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 8px;
+    }
+    .timeline-content { background: #fff; border-radius: var(--radius); padding: 24px; border: 1px solid var(--border); }
+    .timeline-content h3 { font-size: 1.1rem; color: var(--forest); margin-bottom: 10px; }
+    .timeline-tasks { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    .timeline-tag {
+      background: var(--cream); border: 1px solid var(--border); border-radius: 50px;
+      padding: 4px 12px; font-size: 0.75rem; color: var(--text-mid);
+    }
+
+    /* ===== TOOLS / INTEGRATIONS ===== */
+    #tools { background: var(--warm-white); }
+    .tools-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .tool-card {
+      background: #fff; border-radius: var(--radius); padding: 24px;
+      border: 1px solid var(--border); text-align: center; transition: var(--transition);
+    }
+    .tool-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .tool-icon { font-size: 2rem; margin-bottom: 12px; }
+    .tool-card h4 { font-size: 0.9rem; font-weight: 600; color: var(--forest); margin-bottom: 6px; }
+    .tool-card p { font-size: 0.78rem; color: var(--text-light); }
+
+    /* ===== FAQ ===== */
+    #faq { background: var(--cream); }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: #fff; border-radius: var(--radius); border: 1px solid var(--border); overflow: hidden;
+    }
+    .faq-question {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 24px; cursor: pointer; font-weight: 500; color: var(--forest); font-size: 0.95rem;
+      transition: background 0.2s;
+    }
+    .faq-question:hover { background: var(--cream); }
+    .faq-arrow { font-size: 1.1rem; color: var(--gold); transition: transform 0.3s; flex-shrink: 0; }
+    .faq-item.open .faq-arrow { transform: rotate(180deg); }
+    .faq-answer { display: none; padding: 0 24px 20px; font-size: 0.92rem; color: var(--text-mid); line-height: 1.75; }
+    .faq-item.open .faq-answer { display: block; }
+
+    /* ===== CTA ===== */
+    #cta {
+      background: var(--forest); color: #fff; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    #cta::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at center top, rgba(201,149,42,0.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    #cta .section-title { color: #fff; }
+    #cta p { color: rgba(255,255,255,0.7); margin-bottom: 48px; font-size: 1.1rem; }
+    .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .btn-white { background: #fff; color: var(--forest); font-weight: 600; }
+    .btn-white:hover { background: var(--cream); transform: translateY(-2px); box-shadow: 0 8px 32px rgba(0,0,0,0.2); }
+    .btn-outline-white { background: transparent; color: #fff; border: 2px solid rgba(255,255,255,0.4); }
+    .btn-outline-white:hover { background: rgba(255,255,255,0.1); transform: translateY(-2px); }
+
+    /* ===== FOOTER (injected by JS) ===== */
+    #site-footer { background: var(--text-dark); color: rgba(255,255,255,0.7); }
+    .footer-inner { max-width: 1200px; margin: 0 auto; padding: 72px 24px 40px; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 56px; }
+    .footer-brand .logo { color: #fff; margin-bottom: 16px; }
+    .footer-brand p { font-size: 0.88rem; line-height: 1.75; color: rgba(255,255,255,0.5); max-width: 280px; }
+    .footer-col h5 { font-family: 'Fraunces', serif; color: #fff; font-size: 0.95rem; margin-bottom: 20px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col a { font-size: 0.85rem; color: rgba(255,255,255,0.5); transition: color 0.2s; }
+    .footer-col a:hover { color: var(--gold-light); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; }
+    .footer-copy { font-size: 0.8rem; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
+    .footer-links a:hover { color: var(--gold-light); }
+
+    /* ===== ANIMATIONS ===== */
+    .reveal {
+      opacity: 0; transform: translateY(32px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ===== TOAST ===== */
+    .toast {
+      position: fixed; bottom: 24px; right: 24px;
+      background: var(--forest); color: #fff; padding: 14px 22px;
+      border-radius: 50px; font-size: 0.88rem; box-shadow: var(--shadow-lg);
+      z-index: 9999; opacity: 0; transform: translateY(20px);
+      transition: all 0.4s cubic-bezier(0.4,0,0.2,1); pointer-events: none;
+    }
+    .toast.show { opacity: 1; transform: none; }
+
+    /* ===== PROGRESS INDICATOR ===== */
+    .reading-progress {
+      position: fixed; top: 0; left: 0; height: 3px; background: var(--gold);
+      z-index: 2000; width: 0%; transition: width 0.1s;
+    }
+
+    /* ===== BACK TO TOP ===== */
+    .back-top {
+      position: fixed; bottom: 80px; right: 24px; width: 44px; height: 44px;
+      background: var(--forest); color: #fff; border-radius: 50%; display: flex;
+      align-items: center; justify-content: center; z-index: 999;
+      opacity: 0; pointer-events: none; transition: var(--transition);
+      box-shadow: var(--shadow); cursor: pointer;
+    }
+    .back-top.visible { opacity: 1; pointer-events: auto; }
+    .back-top:hover { background: var(--forest-mid); transform: translateY(-3px); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .features-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+      .hero-visual { order: -1; }
+      .market-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .section { padding: 70px 0; }
+      .nav, .header-cta .btn-outline { display: none; }
+      .hamburger { display: flex; }
+      .features-grid { grid-template-columns: 1fr; }
+      .steps { grid-template-columns: 1fr 1fr; gap: 40px; }
+      .steps::before { display: none; }
+      .tools-grid { grid-template-columns: repeat(2, 1fr); }
+      .calc-grid { grid-template-columns: 1fr; }
+      .swot-grid { grid-template-columns: 1fr; }
+      .fin-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+      .app-panel { padding: 24px; }
+      .hero-stats { gap: 24px; flex-wrap: wrap; }
+    }
+    @media (max-width: 480px) {
+      .steps { grid-template-columns: 1fr; }
+      .calc-wrapper { padding: 28px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Reading Progress -->
+<div class="reading-progress" id="readingProgress"></div>
+
+<!-- Header (injected by JS) -->
+<header id="site-header"></header>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#features">Features</a>
+  <a href="#app">Planner Tool</a>
+  <a href="#how-it-works">How It Works</a>
+  <a href="#calculator">Calculator</a>
+  <a href="#market">Market Analysis</a>
+  <a href="#roadmap">Roadmap</a>
+  <a href="#faq">FAQ</a>
+  <a href="#app" class="btn btn-primary" style="width:fit-content">Start Planning Free</a>
+</nav>
+
+<main>
+  <!-- ===== HERO ===== -->
+  <section id="hero" aria-label="Hero Section">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span></span> Business Planning Platform
+        </div>
+        <h1 class="hero-title">Plan Your <em>Business</em><br>With Precision</h1>
+        <p class="hero-desc">Business Planner is the all-in-one business planner web application trusted by entrepreneurs, startups, and SMEs to build compelling business plans, track goals, and model financial futures.</p>
+        <div class="hero-actions">
+          <a href="#app" class="btn btn-primary">🚀 Start Planning Free</a>
+          <a href="#how-it-works" class="btn btn-outline">See How It Works</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">50K+</div>
+            <div class="hero-stat-label">Business Plans Created</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">98%</div>
+            <div class="hero-stat-label">Plan Completion Rate</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">120+</div>
+            <div class="hero-stat-label">Business Templates</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div style="position:relative;">
+          <div class="floating-tag" style="top:-22px;right:-10px;">
+            <div class="tag-dot" style="background:#2d7a4f;"></div> Revenue up 34%
+          </div>
+          <div class="hero-card" style="animation-delay:0.2s;">
+            <div class="hero-card-header">
+              <span class="hero-card-title">📊 Business Health Score</span>
+              <span class="hero-card-badge">On Track</span>
+            </div>
+            <div class="progress-list">
+              <div class="progress-item">
+                <div class="progress-label"><span>Market Strategy</span><span>87%</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="87"></div></div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-label"><span>Financial Plan</span><span>72%</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="72"></div></div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-label"><span>Operations</span><span>91%</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="91"></div></div>
+              </div>
+              <div class="progress-item">
+                <div class="progress-label"><span>Team Structure</span><span>60%</span></div>
+                <div class="progress-bar"><div class="progress-fill" data-width="60"></div></div>
+              </div>
+            </div>
+            <div class="mini-cards">
+              <div class="mini-card">
+                <div class="mini-card-val">$240K</div>
+                <div class="mini-card-lbl">Projected Revenue</div>
+              </div>
+              <div class="mini-card">
+                <div class="mini-card-val">Q2 '25</div>
+                <div class="mini-card-lbl">Break-even Target</div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-tag" style="bottom:30px;left:-28px;">
+            <div class="tag-dot" style="background:#c9952a;"></div> 3 Goals Complete
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section id="features" class="section" aria-labelledby="features-title">
+    <div class="container">
+      <div class="section-label reveal">Core Features</div>
+      <h2 class="section-title reveal" id="features-title">Everything You Need to<br>Plan Smarter</h2>
+      <p class="section-subtitle reveal">Business Planner gives entrepreneurs and business owners a comprehensive suite of planning tools — from idea validation to investor-ready documentation.</p>
+      <div class="features-grid">
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon green">📋</div>
+          <h3>Business Plan Builder</h3>
+          <p>Build a structured, investor-ready business plan using proven frameworks. Cover executive summaries, market analysis, operations, and financials with guided prompts and smart templates.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon gold">💰</div>
+          <h3>Financial Projections</h3>
+          <p>Model your revenue, expenses, cash flow, and profit margins across 1, 3, and 5-year timeframes. Dynamic charts update in real-time as you adjust your assumptions.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon blue">🔍</div>
+          <h3>SWOT Analysis Tool</h3>
+          <p>Conduct thorough SWOT analysis to identify strengths, weaknesses, opportunities, and threats. Visual matrices help you communicate your strategic position clearly.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon gold">🎯</div>
+          <h3>Goal & KPI Tracker</h3>
+          <p>Set SMART business goals and track key performance indicators in real time. Milestone tracking with priority levels and deadline management keeps your team aligned.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon green">🗺️</div>
+          <h3>Strategic Roadmap</h3>
+          <p>Visualize your business journey from launch to scale with a strategic roadmap. Plan phases, assign deliverables, and communicate your vision to stakeholders and investors.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon blue">📈</div>
+          <h3>Market Analysis</h3>
+          <p>Understand your target market, analyze competitors, and validate your business model. Use built-in templates to size your market and define your competitive advantage.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APP TOOL ===== -->
+  <section id="app" class="section" aria-labelledby="app-title">
+    <div class="container">
+      <div class="section-label reveal">Interactive Planner</div>
+      <h2 class="section-title reveal" id="app-title">Your Business Planner, Live</h2>
+      <p class="section-subtitle reveal">Use the tools below to build your business plan, run SWOT analysis, set strategic goals, and model financials — right in your browser. Your data is saved locally.</p>
+      <div class="app-wrapper reveal">
+        <div class="app-tabs" role="tablist">
+          <div class="app-tab active" onclick="switchTab('plan')" role="tab">📋 Business Plan</div>
+          <div class="app-tab" onclick="switchTab('swot')" role="tab">🔍 SWOT Analysis</div>
+          <div class="app-tab" onclick="switchTab('goals')" role="tab">🎯 Goals & KPIs</div>
+          <div class="app-tab" onclick="switchTab('financial')" role="tab">💰 Financials</div>
+        </div>
+
+        <!-- Business Plan Tab -->
+        <div class="app-panel active" id="tab-plan">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:12px;">
+            <div>
+              <h3 style="color:#fff;font-size:1.1rem;margin-bottom:4px;">Business Plan Builder</h3>
+              <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);">Click each section to expand and fill in your details.</p>
+            </div>
+            <button class="btn btn-gold" onclick="savePlan()" style="padding:10px 24px;font-size:0.85rem;">💾 Save Plan</button>
+          </div>
+          <div class="plan-sections">
+            <div class="plan-section" id="ps-1">
+              <div class="plan-section-header" onclick="toggleSection('ps-1')">
+                <h4>🏢 Executive Summary</h4>
+                <span class="plan-section-toggle">+</span>
+              </div>
+              <div class="plan-section-body">
+                <label>Business Name</label>
+                <input type="text" id="biz-name" placeholder="e.g. Acme Corp" style="margin-bottom:12px;" />
+                <label>Mission Statement</label>
+                <textarea id="biz-mission" placeholder="Describe your company's mission and core purpose..."></textarea>
+                <label style="margin-top:12px;">Value Proposition</label>
+                <textarea id="biz-value" placeholder="What unique value does your business provide?"></textarea>
+              </div>
+            </div>
+            <div class="plan-section" id="ps-2">
+              <div class="plan-section-header" onclick="toggleSection('ps-2')">
+                <h4>🎯 Market Opportunity</h4>
+                <span class="plan-section-toggle">+</span>
+              </div>
+              <div class="plan-section-body">
+                <label>Target Market</label>
+                <textarea id="mkt-target" placeholder="Describe your primary and secondary target audiences..."></textarea>
+                <label style="margin-top:12px;">Problem You Solve</label>
+                <textarea id="mkt-problem" placeholder="What pain points does your product/service address?"></textarea>
+              </div>
+            </div>
+            <div class="plan-section" id="ps-3">
+              <div class="plan-section-header" onclick="toggleSection('ps-3')">
+                <h4>🏗️ Products & Services</h4>
+                <span class="plan-section-toggle">+</span>
+              </div>
+              <div class="plan-section-body">
+                <label>Product/Service Description</label>
+                <textarea id="prod-desc" placeholder="Describe your product or service offering in detail..."></textarea>
+                <label style="margin-top:12px;">Competitive Advantage</label>
+                <textarea id="prod-adv" placeholder="What sets you apart from competitors?"></textarea>
+              </div>
+            </div>
+            <div class="plan-section" id="ps-4">
+              <div class="plan-section-header" onclick="toggleSection('ps-4')">
+                <h4>💳 Revenue Model</h4>
+                <span class="plan-section-toggle">+</span>
+              </div>
+              <div class="plan-section-body">
+                <label>Revenue Streams</label>
+                <textarea id="rev-streams" placeholder="How will you make money? List all revenue streams..."></textarea>
+                <label style="margin-top:12px;">Pricing Strategy</label>
+                <textarea id="rev-pricing" placeholder="Describe your pricing model and rationale..."></textarea>
+              </div>
+            </div>
+            <div class="plan-section" id="ps-5">
+              <div class="plan-section-header" onclick="toggleSection('ps-5')">
+                <h4>👥 Team & Operations</h4>
+                <span class="plan-section-toggle">+</span>
+              </div>
+              <div class="plan-section-body">
+                <label>Key Team Members</label>
+                <textarea id="team-members" placeholder="List key founders and their roles..."></textarea>
+                <label style="margin-top:12px;">Operational Plan</label>
+                <textarea id="team-ops" placeholder="Describe key operational activities and resources needed..."></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SWOT Tab -->
+        <div class="app-panel" id="tab-swot">
+          <div style="margin-bottom:24px;">
+            <h3 style="color:#fff;font-size:1.1rem;margin-bottom:4px;">SWOT Analysis</h3>
+            <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);">Assess your business's internal strengths/weaknesses and external opportunities/threats.</p>
+          </div>
+          <div class="swot-grid" id="swot-grid"></div>
+        </div>
+
+        <!-- Goals Tab -->
+        <div class="app-panel" id="tab-goals">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;flex-wrap:wrap;gap:12px;">
+            <div>
+              <h3 style="color:#fff;font-size:1.1rem;margin-bottom:4px;">Business Goals & KPIs</h3>
+              <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);">Track your strategic objectives and key results.</p>
+            </div>
+          </div>
+          <div class="goals-wrapper" id="goals-list"></div>
+          <div class="add-goal-row" style="margin-top:16px;">
+            <input type="text" id="new-goal-input" placeholder="Add a new business goal..." />
+            <button class="btn btn-gold" onclick="addGoal()" style="padding:10px 20px;font-size:0.85rem;border-radius:8px;">+ Add</button>
+          </div>
+        </div>
+
+        <!-- Financial Tab -->
+        <div class="app-panel" id="tab-financial">
+          <div style="margin-bottom:24px;">
+            <h3 style="color:#fff;font-size:1.1rem;margin-bottom:4px;">Financial Overview</h3>
+            <p style="font-size:0.82rem;color:rgba(255,255,255,0.5);">Enter your financial assumptions to generate projections.</p>
+          </div>
+          <div class="fin-grid">
+            <div class="fin-card">
+              <label>Monthly Revenue ($)</label>
+              <input type="number" id="fin-revenue" placeholder="0" oninput="updateFinancials()" />
+            </div>
+            <div class="fin-card">
+              <label>Monthly Expenses ($)</label>
+              <input type="number" id="fin-expenses" placeholder="0" oninput="updateFinancials()" />
+            </div>
+            <div class="fin-card">
+              <label>Monthly Profit ($)</label>
+              <div class="fin-val" id="fin-profit">$0</div>
+            </div>
+          </div>
+          <div class="fin-chart">
+            <div class="fin-chart-title">6-Month Revenue vs. Expense Projection</div>
+            <div class="chart-bars" id="fin-chart-bars"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section id="how-it-works" class="section" aria-labelledby="hiw-title">
+    <div class="container">
+      <div style="text-align:center;">
+        <div class="section-label reveal">Process</div>
+        <h2 class="section-title reveal" id="hiw-title" style="text-align:center;">From Idea to Business Plan<br>in Four Steps</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto 64px;">Our structured business planning process guides you from initial concept through to a polished, investor-ready plan — no prior experience required.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal reveal-delay-1">
+          <div class="step-num">01</div>
+          <h3>Define Your Vision</h3>
+          <p>Start with your executive summary, mission statement, and the core problem your business solves. Clarity here drives everything else.</p>
+        </div>
+        <div class="step reveal reveal-delay-2">
+          <div class="step-num">02</div>
+          <h3>Analyze Your Market</h3>
+          <p>Identify your target audience, size your market opportunity, and map competitive landscapes using our built-in SWOT and market analysis frameworks.</p>
+        </div>
+        <div class="step reveal reveal-delay-3">
+          <div class="step-num">03</div>
+          <h3>Model Your Finances</h3>
+          <p>Build revenue projections, estimate startup costs, calculate break-even points, and forecast cash flow. Our calculator does the heavy lifting.</p>
+        </div>
+        <div class="step reveal reveal-delay-4">
+          <div class="step-num">04</div>
+          <h3>Track & Execute</h3>
+          <p>Turn your plan into action with goal setting, KPI tracking, and a strategic roadmap. Monitor progress and adapt with real-time insights.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINANCIAL CALCULATOR ===== -->
+  <section id="calculator" class="section" aria-labelledby="calc-title">
+    <div class="container">
+      <div class="section-label reveal">Business Calculator</div>
+      <h2 class="section-title reveal" id="calc-title">Break-Even & ROI Calculator</h2>
+      <p class="section-subtitle reveal">Quickly model your business financials. Enter your key assumptions and Business Planner instantly computes your break-even point and projected return on investment.</p>
+      <div class="calc-wrapper reveal">
+        <div class="calc-grid">
+          <div class="calc-form">
+            <div class="form-group">
+              <label for="c-fixed">Monthly Fixed Costs ($)</label>
+              <input type="number" id="c-fixed" placeholder="e.g. 5000" oninput="runCalc()" />
+            </div>
+            <div class="form-group">
+              <label for="c-variable">Variable Cost per Unit ($)</label>
+              <input type="number" id="c-variable" placeholder="e.g. 20" oninput="runCalc()" />
+            </div>
+            <div class="form-group">
+              <label for="c-price">Selling Price per Unit ($)</label>
+              <input type="number" id="c-price" placeholder="e.g. 50" oninput="runCalc()" />
+            </div>
+            <div class="form-group">
+              <label for="c-units">Expected Monthly Units Sold</label>
+              <input type="number" id="c-units" placeholder="e.g. 200" oninput="runCalc()" />
+            </div>
+            <div class="form-group">
+              <label for="c-invest">Initial Investment ($)</label>
+              <input type="number" id="c-invest" placeholder="e.g. 50000" oninput="runCalc()" />
+            </div>
+          </div>
+          <div class="calc-results">
+            <div class="result-card primary">
+              <div>
+                <div class="result-label">Break-Even Point (Units/Month)</div>
+                <div class="result-value" id="res-breakeven">–</div>
+              </div>
+              <div class="result-icon">⚖️</div>
+            </div>
+            <div class="result-card secondary">
+              <div>
+                <div class="result-label">Monthly Net Profit</div>
+                <div class="result-value" id="res-profit">–</div>
+              </div>
+              <div class="result-icon">📈</div>
+            </div>
+            <div class="result-card primary">
+              <div>
+                <div class="result-label">Monthly Revenue</div>
+                <div class="result-value" id="res-revenue">–</div>
+              </div>
+              <div class="result-icon">💵</div>
+            </div>
+            <div class="result-card secondary">
+              <div>
+                <div class="result-label">Annual ROI</div>
+                <div class="result-value" id="res-roi">–</div>
+              </div>
+              <div class="result-icon">🎯</div>
+            </div>
+            <p class="calc-note">Results are estimates for planning purposes only. Always consult a financial advisor for business decisions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARKET ANALYSIS ===== -->
+  <section id="market" class="section" aria-labelledby="market-title">
+    <div class="container">
+      <div class="market-grid">
+        <div class="market-content reveal">
+          <div class="section-label">Market Analysis</div>
+          <h2 class="section-title" id="market-title">Understand Your<br>Market Position</h2>
+          <p>Effective business planning requires deep market insight. Business Planner helps you size your total addressable market, identify the right customer segments, and position your offering for maximum impact.</p>
+          <div class="market-points">
+            <div class="market-point">
+              <div class="market-point-icon">🌐</div>
+              <div>
+                <h4>Total Addressable Market (TAM)</h4>
+                <p>Calculate the full revenue opportunity available for your product or service within your industry and geography.</p>
+              </div>
+            </div>
+            <div class="market-point">
+              <div class="market-point-icon">🎯</div>
+              <div>
+                <h4>Serviceable Obtainable Market (SOM)</h4>
+                <p>Define the realistic market share you can capture in your first years, grounding your financial projections in reality.</p>
+              </div>
+            </div>
+            <div class="market-point">
+              <div class="market-point-icon">🔬</div>
+              <div>
+                <h4>Competitor Analysis</h4>
+                <p>Map direct and indirect competitors, assess their strengths and weaknesses, and identify white-space opportunities for differentiation.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="market-visual reveal reveal-delay-2">
+          <div class="market-chart">
+            <h4 style="font-size:0.9rem;color:var(--forest);margin-bottom:20px;">Market Share Distribution</h4>
+            <div class="donut-wrap">
+              <svg class="donut-svg" width="180" height="180" viewBox="0 0 180 180">
+                <circle cx="90" cy="90" r="70" fill="none" stroke="#f0e8d8" stroke-width="28"/>
+                <circle cx="90" cy="90" r="70" fill="none" stroke="#1A3A2A" stroke-width="28"
+                  stroke-dasharray="176 264" stroke-dashoffset="0" />
+                <circle cx="90" cy="90" r="70" fill="none" stroke="#C9952A" stroke-width="28"
+                  stroke-dasharray="110 330" stroke-dashoffset="-176" />
+                <circle cx="90" cy="90" r="70" fill="none" stroke="#8FAF8F" stroke-width="28"
+                  stroke-dasharray="88 352" stroke-dashoffset="-286" />
+                <circle cx="90" cy="90" r="70" fill="none" stroke="#E8B84B" stroke-width="28"
+                  stroke-dasharray="66 374" stroke-dashoffset="-374" />
+              </svg>
+              <div class="donut-center">
+                <div class="donut-center-val">$2.4B</div>
+                <div class="donut-center-lbl">Total Market</div>
+              </div>
+            </div>
+            <div class="legend">
+              <div class="legend-item">
+                <div class="legend-dot" style="background:#1A3A2A;"></div>
+                <span class="legend-name">Your Segment (TAM)</span>
+                <span class="legend-pct">40%</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="background:#C9952A;"></div>
+                <span class="legend-name">Competitor A</span>
+                <span class="legend-pct">25%</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="background:#8FAF8F;"></div>
+                <span class="legend-name">Competitor B</span>
+                <span class="legend-pct">20%</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot" style="background:#E8B84B;"></div>
+                <span class="legend-name">Others</span>
+                <span class="legend-pct">15%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ROADMAP ===== -->
+  <section id="roadmap" class="section" aria-labelledby="roadmap-title">
+    <div class="container">
+      <div class="section-label reveal">Strategic Roadmap</div>
+      <h2 class="section-title reveal" id="roadmap-title">Your Path From Startup<br>to Scale</h2>
+      <p class="section-subtitle reveal">A well-structured business roadmap turns strategy into execution. Here's a proven framework for taking your idea from validation to market leadership.</p>
+      <div class="roadmap-timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-phase">Phase 1 · Months 1–3</div>
+          <div class="timeline-content">
+            <h3>Validation & Foundation</h3>
+            <p>Validate your business idea, define your value proposition, and conduct customer discovery interviews. Set up your legal entity, open business accounts, and write your initial business plan.</p>
+            <div class="timeline-tasks">
+              <span class="timeline-tag">Market Research</span>
+              <span class="timeline-tag">Customer Interviews</span>
+              <span class="timeline-tag">Business Registration</span>
+              <span class="timeline-tag">MVP Definition</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-phase">Phase 2 · Months 4–6</div>
+          <div class="timeline-content">
+            <h3>Launch & Early Traction</h3>
+            <p>Launch your minimum viable product, acquire your first customers, and iterate based on feedback. Focus on product-market fit and establish your initial go-to-market channels.</p>
+            <div class="timeline-tasks">
+              <span class="timeline-tag">MVP Launch</span>
+              <span class="timeline-tag">First 100 Customers</span>
+              <span class="timeline-tag">Sales Process</span>
+              <span class="timeline-tag">Feedback Loops</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-phase">Phase 3 · Months 7–12</div>
+          <div class="timeline-content">
+            <h3>Growth & Optimization</h3>
+            <p>Scale your customer acquisition, optimize your unit economics, and build repeatable revenue. Invest in the team, processes, and infrastructure needed for sustainable growth.</p>
+            <div class="timeline-tasks">
+              <span class="timeline-tag">Revenue Scaling</span>
+              <span class="timeline-tag">Team Hiring</span>
+              <span class="timeline-tag">Process Automation</span>
+              <span class="timeline-tag">Break-Even</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-phase">Phase 4 · Year 2+</div>
+          <div class="timeline-content">
+            <h3>Scale & Market Leadership</h3>
+            <p>Expand into new markets, launch new products or services, and build strategic partnerships. Consider growth financing, pursue awards and recognition, and establish market leadership.</p>
+            <div class="timeline-tasks">
+              <span class="timeline-tag">New Markets</span>
+              <span class="timeline-tag">Strategic Partnerships</span>
+              <span class="timeline-tag">Series A / Funding</span>
+              <span class="timeline-tag">Brand Authority</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TOOLS ===== -->
+  <section id="tools" class="section" aria-labelledby="tools-title">
+    <div class="container">
+      <div style="text-align:center;">
+        <div class="section-label reveal">Planning Tools</div>
+        <h2 class="section-title reveal" id="tools-title" style="text-align:center;">All the Tools in One Place</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto 56px;">Business Planner bundles all the strategic planning instruments you need to build, validate, and execute your business vision.</p>
+      </div>
+      <div class="tools-grid">
+        <div class="tool-card reveal reveal-delay-1">
+          <div class="tool-icon">📋</div>
+          <h4>Business Plan Templates</h4>
+          <p>120+ industry-specific templates for startups, retail, SaaS, service businesses, and more.</p>
+        </div>
+        <div class="tool-card reveal reveal-delay-2">
+          <div class="tool-icon">💹</div>
+          <h4>Financial Modeler</h4>
+          <p>Build detailed income statements, balance sheets, and cash flow projections with ease.</p>
+        </div>
+        <div class="tool-card reveal reveal-delay-3">
+          <div class="tool-icon">🔍</div>
+          <h4>Competitor Tracker</h4>
+          <p>Monitor and compare competitors across pricing, features, and market positioning.</p>
+        </div>
+        <div class="tool-card reveal reveal-delay-4">
+          <div class="tool-icon">🗓️</div>
+          <h4>Milestone Planner</h4>
+          <p>Set, assign, and track project milestones with deadline management and progress monitoring.</p>
+        </div>
+        <div class="tool-card reveal reveal-delay-1">
+          <div class="tool-icon">👤</div>
+          <h4>Persona Builder</h4>
+          <p>Create detailed customer personas to sharpen your marketing and product strategy.</p>
+        </div>
+        <div class="tool-card reveal reveal-delay-2">
+          <div class="tool-icon">📊</div>
+          <h4>KPI Dashboard</h4>
+          <p>Track business-critical metrics in real time with visual dashboards and trend analysis.</p>
+        </div>
+        <div class="tool-card reveal reveal-delay-3">
+          <div class="tool-icon">📄</div>
+          <h4>Pitch Deck Generator</h4>
+          <p>Turn your business plan into a compelling investor pitch deck in minutes.</p>
+        </div>
+        <div class="tool-card reveal reveal-delay-4">
+          <div class="tool-icon">🤝</div>
+          <h4>Partnership Tracker</h4>
+          <p>Manage and nurture strategic business partnerships and vendor relationships.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="section" aria-labelledby="faq-title">
+    <div class="container">
+      <div style="text-align:center;">
+        <div class="section-label reveal">FAQ</div>
+        <h2 class="section-title reveal" id="faq-title" style="text-align:center;">Frequently Asked Questions</h2>
+        <p class="section-subtitle reveal" style="margin:0 auto 56px;">Everything you need to know about business planning with Business Planner.</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            What is a business planner web application?
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-answer">A business planner web application is a digital tool that helps entrepreneurs, startups, and business owners create comprehensive business plans, model financials, track goals, and develop strategic roadmaps. Business Planner provides all of these capabilities in a single, easy-to-use platform accessible from any browser.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Do I need any business planning experience to use Business Planner?
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-answer">Not at all. Business Planner is designed for entrepreneurs at every stage. Our guided prompts, pre-built templates, and step-by-step process walk you through every aspect of building a professional business plan — even if you've never written one before.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Can I create financial projections without an accounting background?
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-answer">Yes. Our financial modeling tools are built for non-accountants. Simply enter your assumptions — revenue targets, cost estimates, and growth rates — and Business Planner automatically generates income statements, cash flow forecasts, and break-even analyses with visual charts.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Is my business plan data saved securely?
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-answer">Your data is saved locally in your browser's local storage, giving you full ownership and control. No account is required to start planning. For cloud backup and team collaboration features, you can optionally create a free account.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            What industries and business types does Business Planner support?
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-answer">Business Planner supports all industries and business models including SaaS, e-commerce, retail, restaurants, professional services, manufacturing, non-profits, and more. With over 120 industry-specific templates, you'll find a starting point tailored to your specific business context.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            Can I use Business Planner to prepare for investor meetings?
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-answer">Absolutely. Business Planner is designed with investor-readiness in mind. The structured business plan framework follows the format that investors and lenders expect. You can also use our pitch deck generator to transform your plan into a professional presentation tailored for funding conversations.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            How does the SWOT analysis tool work?
+            <span class="faq-arrow">▼</span>
+          </div>
+          <div class="faq-answer">The SWOT analysis tool presents a visual four-quadrant matrix where you can add, edit, and organize your business's Strengths, Weaknesses, Opportunities, and Threats. Items are easily managed with inline editing. The completed analysis can be exported as part of your business plan or as a standalone document.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section id="cta" class="section" aria-label="Call to Action">
+    <div class="container" style="text-align:center;position:relative;z-index:1;">
+      <div class="section-label" style="color:var(--gold-light);" class="reveal">Get Started Today</div>
+      <h2 class="section-title reveal">Your Business Plan Starts Here</h2>
+      <p class="reveal" style="max-width:520px;margin:0 auto 48px;">Join over 50,000 entrepreneurs who have used Business Planner to transform their business ideas into actionable, fundable plans. Free to start, no credit card required.</p>
+      <div class="cta-actions reveal">
+        <a href="#app" class="btn btn-white">🚀 Start Planning Free</a>
+        <a href="#features" class="btn btn-outline-white">Explore Features</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer (injected by JS) -->
+<footer id="site-footer"></footer>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast"></div>
+
+<!-- Back to Top -->
+<div class="back-top" id="backTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</div>
+
+<!-- JS Components & Logic -->
+<script src="header.js"></script>
+<script src="footer.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
