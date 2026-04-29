@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Get in Touch with Waqas Bukhari</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --cream: #FDF8F0; --gold: #C9952A; --forest: #1A3A2A; --text-dark: #1C1C1C; --border: #E8E0D0;
+    }
+    body { font-family: 'DM Sans', sans-serif; background: var(--cream); margin: 0; text-align: center; }
+    .contact-hero { background: var(--forest); color: white; padding: 100px 24px; }
+    h1 { font-family: 'Fraunces', serif; font-size: 3rem; margin-bottom: 10px; }
+    .contact-card {
+      max-width: 600px; margin: -50px auto 100px; background: white; 
+      padding: 40px; border-radius: 20px; box-shadow: 0 12px 48px rgba(26,58,42,0.15);
+      border: 1px solid var(--border);
+    }
+    .email-link { 
+      display: inline-block; padding: 15px 30px; background: var(--gold); 
+      color: white; text-decoration: none; border-radius: 50px; 
+      font-weight: 600; transition: transform 0.3s ease;
+    }
+    .email-link:hover { transform: translateY(-3px); background: #E8B84B; }
+/* ===== HEADER (injected by JS) ===== */
+    #site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(253,248,240,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: var(--transition);
+    }
+    #site-header.scrolled { box-shadow: var(--shadow); }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 24px; max-width: 1200px; margin: 0 auto;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 800; color: var(--forest);
+    }
+    .logo-icon {
+      width: 36px; height: 36px; background: var(--forest); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-icon svg { width: 20px; height: 20px; }
+    .nav { display: flex; align-items: center; gap: 36px; }
+    .nav a { font-size: 0.9rem; font-weight: 500; color: var(--text-mid); transition: color 0.2s; }
+    .nav a:hover { color: var(--forest); }
+    .header-cta { display: flex; align-items: center; gap: 12px; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { width: 24px; height: 2px; background: var(--forest); transition: var(--transition); border-radius: 2px; }
+
+    /* ===== MOBILE NAV ===== */
+    .mobile-nav {
+      display: none; position: fixed; top: 73px; left: 0; right: 0; bottom: 0;
+      background: var(--warm-white); z-index: 999; padding: 40px 24px;
+      flex-direction: column; gap: 28px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a { font-size: 1.2rem; font-weight: 600; color: var(--forest); font-family: 'Fraunces', serif; }
+
+      /* ===== FOOTER (injected by JS) ===== */
+    #site-footer { background: var(--text-dark); color: rgba(255,255,255,0.7); }
+    .footer-inner { max-width: 1200px; margin: 0 auto; padding: 72px 24px 40px; }
+    .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 56px; }
+    .footer-brand .logo { color: #fff; margin-bottom: 16px; }
+    .footer-brand p { font-size: 0.88rem; line-height: 1.75; color: rgba(255,255,255,0.5); max-width: 280px; }
+    .footer-col h5 { font-family: 'Fraunces', serif; color: #fff; font-size: 0.95rem; margin-bottom: 20px; }
+    .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+    .footer-col a { font-size: 0.85rem; color: rgba(255,255,255,0.5); transition: color 0.2s; }
+    .footer-col a:hover { color: var(--gold-light); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 28px; display: flex; justify-content: space-between; align-items: center; flex-wrap: gap; }
+    .footer-copy { font-size: 0.8rem; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.4); }
+    .footer-links a:hover { color: var(--gold-light); }
+  </style>
+</head>
+<body>
+<!-- Header (injected by JS) -->
+<header id="site-header"></header>
+  <section class="contact-hero">
+    <h1>Get In Touch</h1>
+    <p>Have questions about Business Planner or need SEO advice?</p>
+  </section>
+
+  <div class="contact-card">
+    <h2 style="font-family: 'Fraunces'; color: var(--forest);">Waqas Bukhari</h2>
+    <p style="color: #7A7A7A; margin-bottom: 30px;">Web Developer & SEO Expert</p>
+    <p style="margin-bottom: 40px;">Whether you're looking for technical support or a consultation on growing your business online, I'm here to help.</p>
+    <a href="mailto:nolushac@gmail.com" class="email-link">Email: nolushac@gmail.com</a>
+  </div>
+  <!-- Footer (injected by JS) -->
+<footer id="site-footer"></footer>
+  
+<!-- JS Components & Logic -->
+<script src="header.js"></script>
+<script src="footer.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
