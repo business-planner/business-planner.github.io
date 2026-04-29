@@ -21,6 +21,43 @@
     p { margin-bottom: 20px; color: var(--text-mid); }
     .last-updated { font-size: 0.9rem; color: var(--gold); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; }
     hr { border: 0; border-top: 1px solid var(--border); margin: 40px 0; }
+     /* ===== HEADER (injected by JS) ===== */
+    #site-header {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: rgba(253,248,240,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: var(--transition);
+    }
+    #site-header.scrolled { box-shadow: var(--shadow); }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 24px; max-width: 1200px; margin: 0 auto;
+    }
+    .logo {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 800; color: var(--forest);
+    }
+    .logo-icon {
+      width: 36px; height: 36px; background: var(--forest); border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-icon svg { width: 20px; height: 20px; }
+    .nav { display: flex; align-items: center; gap: 36px; }
+    .nav a { font-size: 0.9rem; font-weight: 500; color: var(--text-mid); transition: color 0.2s; }
+    .nav a:hover { color: var(--forest); }
+    .header-cta { display: flex; align-items: center; gap: 12px; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+    .hamburger span { width: 24px; height: 2px; background: var(--forest); transition: var(--transition); border-radius: 2px; }
+
+    /* ===== MOBILE NAV ===== */
+    .mobile-nav {
+      display: none; position: fixed; top: 73px; left: 0; right: 0; bottom: 0;
+      background: var(--warm-white); z-index: 999; padding: 40px 24px;
+      flex-direction: column; gap: 28px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a { font-size: 1.2rem; font-weight: 600; color: var(--forest); font-family: 'Fraunces', serif; }
   </style>
 </head>
 <body>
