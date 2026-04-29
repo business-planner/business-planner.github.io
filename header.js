@@ -31,8 +31,7 @@
           <a href="#faq">FAQ</a>
         </nav>
         <div class="header-cta">
-          <a href="#app" class="btn btn-primary" style="padding:10px 20px;">Start Planning</a>
-          <a href="#app" class="btn-outline" style="padding:10px 20px;">Sign In</a>
+          <a href="#app" class="btn btn-primary" style="padding:10px 20px;">Start Planning</a>          
         </div>
         <div class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false">
           <span></span><span></span><span></span>
