@@ -416,13 +416,13 @@ function buildHeader() {
         <span>Business Planner</span>
       </div>
       <nav class="nav">
-        <a href="#features">Features</a>
-        <a href="#app">Planner Tool</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#calculator">Calculator</a>
-        <a href="#market">Market Analysis</a>
-        <a href="#roadmap">Roadmap</a>
-        <a href="#faq">FAQ</a>
+        <a href="/">Home</a>
+        <a href="/#app">Planner Tool</a>
+        <a href="/#how-it-works">How It Works</a>
+        <a href="/#calculator">Calculator</a>
+        <a href="/#market">Market Analysis</a>
+        <a href="/#roadmap">Roadmap</a>
+        <a href="/#faq">FAQ</a>
       </nav>
       <div class="header-cta">
         <a href="#app" class="btn btn-primary" style="padding:10px 20px;">Start Planning</a>        
@@ -461,13 +461,13 @@ function buildFooter() {
           </div>
           <p>The ultimate web application for business planning, financial projections, and strategic growth.</p>
         </div>
-        <div class="footer-col"><h5>Product</h5><ul><li><a href="#features">Features</a></li><li><a href="#app">Planner Tool</a></li><li><a href="#calculator">Calculator</a></li><li><a href="#roadmap">Roadmap</a></li></ul></div>
+        <div class="footer-col"><h5>Product</h5><ul><li><a href="/#features">Features</a></li><li><a href="/#app">Planner Tool</a></li><li><a href="/#calculator">Calculator</a></li><li><a href="/#roadmap">Roadmap</a></li></ul></div>
         <div class="footer-col"><h5>Resources</h5><ul><li><a href="#">Help Center</a></li><li><a href="#">Templates</a></li><li><a href="#">Blog</a></li><li><a href="#">Community</a></li></ul></div>
-        <div class="footer-col"><h5>Company</h5><ul><li><a href="#">About</a></li><li><a href="#">Press</a></li><li><a href="#">Contact</a></li><li><a href="#">Privacy</a></li></ul></div>
+        <div class="footer-col"><h5>Pages</h5><ul><li><a href="about">About</a></li><li><a href="contact">Contact</a></li><li><a href="terms">Terms of Use</a></li><li><a href="privacy">Privacy</a></li></ul></div>
       </div>
       <div class="footer-bottom">
-        <div class="footer-copy">© 2025 Business Planner — Plan, Launch, Grow.</div>
-        <div class="footer-links"><a href="#">Terms</a><a href="#">Privacy</a><a href="#">Cookies</a></div>
+        <div class="footer-copy">© 2026 Business Planner — Plan, Launch, Grow.</div>
+        <div class="footer-links"><a href="terms">Terms</a><a href="privacy">Privacy</a></div>
       </div>
     </div>
   `;
